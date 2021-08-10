@@ -1,0 +1,209 @@
+// mobile base media queries
+@mixin media($size) {
+    @if $size==$media-xs {
+        @media (min-width: $media-xs) {
+            @content;
+        }
+    }
+
+    @else if $size==$media-sm {
+        @media (min-width: $media-sm) {
+            @content;
+        }
+    }
+
+    @else if $size==$media-md {
+        @media (min-width: $media-md) {
+            @content;
+        }
+    }
+
+    @else if $size==$media-lg {
+        @media (min-width: $media-lg) {
+            @content;
+        }
+    }
+
+    @else if $size==$media-xl {
+        @media (min-width: $media-xl) {
+            @content;
+        }
+    }
+
+    @else if $size==$media-xxl {
+        @media (min-width: $media-xxl) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (min-width: $size) {
+            @content;
+        }
+    }
+}
+
+// max base media queries
+@mixin mediaMax($size) {
+    @if $size==$media-xs {
+        @media (max-width: 379.88px) {
+            @content;
+        }
+    }
+
+    @else if $size==$media-sm {
+        @media (max-width: 575.88px) {
+            @content;
+        }
+    }
+
+    @else if $size==$media-md {
+        @media (max-width: 767.88px) {
+            @content;
+        }
+    }
+
+    @else if $size==$media-lg {
+        @media (max-width: 991.88px) {
+            @content;
+        }
+    }
+
+    @else if $size==$media-xl {
+        @media (max-width: 1199.88px) {
+            @content;
+        }
+    }
+
+    @else if $size==$media-xxl {
+        @media (max-width: 1399.88px) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (max-width: $size) {
+            @content;
+        }
+    }
+}
+
+@mixin limit_lines($lines, $repeat: false) {
+
+    @if $repeat==false {
+        overflow: hidden;
+        display: -webkit-box !important;
+        -webkit-box-orient: vertical;
+    }
+
+    -webkit-line-clamp: $lines;
+}
+
+@mixin bg-hovering ($color) {
+    background-color: $color;
+
+    &:hover {
+        background-color: lighten($color: $color, $amount: 4%);
+    }
+
+    &:active {
+        background-color: darken($color: $color, $amount: 4%);
+    }
+}
+
+@mixin text-hovering ($color) {
+    color: $color;
+
+    &:hover {
+        color: lighten($color: $color, $amount: 8%);
+    }
+
+    &:active {
+        color: darken($color: $color, $amount: 8%);
+    }
+}
+
+@mixin btn($bg-color, $color) {
+    background-color: $bg-color;
+    color: $color;
+
+    transition: .3s all;
+
+    &:hover {
+        background-color: $bg-color;
+        color: $color;
+    }
+
+    &:active {
+        &::before {
+            background-color: darken($color: $bg-color, $amount: 10%);
+        }
+    }
+}
+
+@mixin btn-hover($color) {
+    position: relative;
+
+    z-index: 1;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: $color;
+        border-radius: 50rem;
+        transform: scale(0);
+        transition: 0.3s all;
+        z-index: -1;
+    }
+
+    &:hover {
+
+        &::before {
+            transform: scale(1);
+        }
+    }
+
+    &:active {
+
+        &::before {
+            background-color: darken($color: $color, $amount: 5%);
+        }
+    }
+}
+
+@mixin btn-active($color) {
+    position: relative;
+
+    z-index: 1;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: $color;
+        border-radius: 50rem;
+        transform: scale(0);
+        transition: 0.3s all;
+        z-index: -1;
+    }
+
+    &:hover {
+
+        &::before {
+            transform: scale(1);
+        }
+    }
+}

@@ -1,0 +1,346 @@
+@font-face {
+  font-family: 'fontIcon';
+  src: url($path-fonts +'fontIcon.eot');
+  src: url($path-fonts +'fontIcon.eot') format('embedded-opentype'),
+    url($path-fonts +'fontIcon.ttf') format('truetype'),
+    url($path-fonts +'fontIcon.woff') format('woff'),
+    url($path-fonts +'fontIcon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fontIcon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hexagon-full:before {
+  content: "\e940";
+}
+
+.icon-google .path1:before {
+  content: "\e938";
+  color: rgb(66, 133, 244);
+}
+
+.icon-google .path2:before {
+  content: "\e939";
+  margin-left: -0.98046875em;
+  color: rgb(52, 168, 83);
+}
+
+.icon-google .path3:before {
+  content: "\e93a";
+  margin-left: -0.98046875em;
+  color: rgb(251, 188, 5);
+}
+
+.icon-google .path4:before {
+  content: "\e93b";
+  margin-left: -0.98046875em;
+  color: rgb(235, 67, 53);
+}
+
+.icon-eye-block:before {
+  content: "\e93c";
+  color: #acacac;
+}
+
+.icon-eye:before {
+  content: "\e93d";
+  color: #acacac;
+}
+
+.icon-heart-full:before {
+  content: "\e92c";
+}
+
+.icon-d-angle-bottom:before {
+  content: "\e908";
+}
+
+.icon-d-angle-left:before {
+  content: "\e933";
+}
+
+.icon-d-angle-top:before {
+  content: "\e934";
+}
+
+.icon-d-angle-right:before {
+  content: "\e935";
+}
+
+.icon-clapperboard:before {
+  content: "\e90d";
+}
+
+.icon-arrow-bottom:before {
+  content: "\e90f";
+}
+
+.icon-arrow-left:before {
+  content: "\e910";
+}
+
+.icon-arrow-top:before {
+  content: "\e911";
+}
+
+.icon-arrow-right:before {
+  content: "\e929";
+}
+
+.icon-log-out:before {
+  content: "\e92d";
+}
+
+.icon-media:before {
+  content: "\e92e";
+}
+
+.icon-mic:before {
+  content: "\e92f";
+}
+
+.icon-play:before {
+  content: "\e930";
+}
+
+.icon-support:before {
+  content: "\e931";
+}
+
+.icon-twitter-2:before {
+  content: "\e928";
+}
+
+.icon-bag:before {
+  content: "\e92b";
+}
+
+.icon-hand-shake:before {
+  content: "\e920";
+}
+
+.icon-linkedin-2:before {
+  content: "\e921";
+}
+
+.icon-profile:before {
+  content: "\e922";
+}
+
+.icon-quality:before {
+  content: "\e923";
+}
+
+.icon-question-mark:before {
+  content: "\e924";
+}
+
+.icon-rating:before {
+  content: "\e925";
+}
+
+.icon-star-2:before {
+  content: "\e926";
+}
+
+.icon-translate:before {
+  content: "\e927";
+}
+
+.icon-users:before {
+  content: "\e92a";
+}
+
+.icon-bg-ellipse:before {
+  content: "\e91d";
+}
+
+.icon-bg-polygon:before {
+  content: "\e91e";
+}
+
+.icon-bg-times:before {
+  content: "\e91f";
+}
+
+.icon-angle-bottom:before {
+  content: "\e901";
+}
+
+.icon-angle-top:before {
+  content: "\e903";
+}
+
+.icon-angle-left:before {
+  content: "\e904";
+}
+
+.icon-angle-right:before {
+  content: "\e916";
+}
+
+.icon-activity:before {
+  content: "\e900";
+}
+
+.icon-home:before {
+  content: "\e91a";
+}
+
+.icon-time-circle:before {
+  content: "\e91b";
+}
+
+.icon-wallet:before {
+  content: "\e91c";
+}
+
+.icon-star:before {
+  content: "\e907";
+}
+
+.icon-times:before {
+  content: "\e90a";
+}
+
+.icon-minus:before {
+  content: "\e90c";
+}
+
+.icon-plus:before {
+  content: "\e919";
+}
+
+.icon-comment:before {
+  content: "\e902";
+}
+
+.icon-facebook:before {
+  content: "\e905";
+}
+
+.icon-instagram:before {
+  content: "\e906";
+}
+
+.icon-linkedin:before {
+  content: "\e909";
+}
+
+.icon-marker:before {
+  content: "\e90b";
+}
+
+.icon-phone-call:before {
+  content: "\e90e";
+}
+
+.icon-telegram:before {
+  content: "\e912";
+}
+
+.icon-telegram-2 .path1:before {
+  content: "\e913";
+  color: rgb(3, 155, 229);
+}
+
+.icon-telegram-2 .path2:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-twitter:before {
+  content: "\e915";
+}
+
+.icon-whatsapp-2 .path1:before {
+  content: "\e917";
+  color: rgb(76, 175, 80);
+}
+
+.icon-whatsapp-2 .path2:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(250, 250, 250);
+}
+
+.icon-times-2:before {
+  content: "\e932";
+}
+
+.icon-heart:before {
+  content: "\e936";
+}
+
+.icon-arrow-left-2:before {
+  content: "\e937";
+}
+
+.icon-check:before {
+  content: "\e93e";
+}
+
+.icon-warning:before {
+  content: "\e93f";
+}
+
+.icon-building:before {
+  content: "\e941";
+}
+
+.icon-telegram-3:before {
+  content: "\e942";
+}
+
+.icon-edit:before {
+  content: "\e943";
+}
+
+.icon-hexagon:before {
+  content: "\e944";
+}
+
+.icon-university:before {
+  content: "\e945";
+}
+
+.icon-award:before {
+  content: "\e946";
+}
+
+.icon-angry-face-emoticon-outline:before {
+  content: "\e947";
+}
+
+.icon-emoticon-neutral-face-outline:before {
+  content: "\e948";
+}
+
+.icon-smiling-emoticon-face:before {
+  content: "\e949";
+}
+
+.icon-laughing-face-stroke:before {
+  content: "\e94a";
+}
+
+.icon-document:before {
+  content: "\e94b";
+}

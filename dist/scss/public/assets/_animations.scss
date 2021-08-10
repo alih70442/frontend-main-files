@@ -1,0 +1,29 @@
+.scale-0 {
+    transition: 0.1s transform;
+    transform: scale(0);
+}
+
+.scale-100 {
+    transition: 0.4s transform;
+    transform: scale(1);
+}
+
+.scaleX-0 {
+    transition: 0.1s transform;
+    transform: scaleX(0);
+}
+
+.scaleX-100 {
+    transition: 0.4s transform;
+    transform: scaleX(1);
+}
+
+.scaleY-0 {
+    transition: 0.1s transform;
+    transform: scaleY(0);
+}
+
+.scaleY-100 {
+    transition: 0.4s transform;
+    transform: scaleY(1);
+}

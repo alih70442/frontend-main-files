@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Shabnam';
+    src: url($path-fonts + 'Shabnam-FD.eot');
+    src: url($path-fonts + 'Shabnam-FD.woff2') format('woff2'),
+        url($path-fonts + 'Shabnam-FD.woff') format('woff'),
+        url($path-fonts + 'Shabnam-FD.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    // solved a lighthouse issue
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Shabnam';
+    src: url($path-fonts + 'Shabnam-Bold-FD.eot');
+    src: url($path-fonts + 'Shabnam-Bold-FD.woff2') format('woff2'),
+        url($path-fonts + 'Shabnam-Bold-FD.woff') format('woff'),
+        url($path-fonts + 'Shabnam-Bold-FD.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+    // solved a lighthouse issue
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Shabnam';
+    src: url($path-fonts + 'Shabnam-Light-FD.eot');
+    src: url($path-fonts + 'Shabnam-Light-FD.woff2') format('woff2'),
+        url($path-fonts + 'Shabnam-Light-FD.woff') format('woff'),
+        url($path-fonts + 'Shabnam-Light-FD.ttf') format('ttf');
+    font-weight: lighter;
+    font-style: normal;
+    // solved a lighthouse issue
+    font-display: swap;
+}
+
+.t-primary {
+    color: $color-primary;
+}
+
+.t-secondary {
+    color: $color-secondary;
+}
+
+.t-dark {
+    color: $font-dark;
+}
+
+.t-dark-passive {
+    color: $font-dark-passive;
+}
+
+.t-light-passive {
+    color: $font-light-passive;
+}
+
+.t-white {
+    color: white;
+}
+
+.t-light {
+    color: $font-light;
+}
+
+.t-warning {
+    color: $color-warning;
+}
+
+.t-danger {
+    color: $color-danger;
+}
+
+.t-success {
+    color: $color-success;
+}
+
+.t-12 {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
+.t-13 {
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+.t-14 {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.t-16 {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+.t-18 {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 300;
+}
+
+// titles +++
+
+.t-title-xs {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 45px;
+
+    @include media($media-lg) {
+        font-size: 20px;
+    }
+}
+
+.t-title-sm {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 45px;
+
+    @include media($media-lg) {
+        font-size: 24px;
+    }
+}
+
+.t-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 45px;
+
+    @include media($media-lg) {
+        font-size: 28px;
+    }
+}
+
+.t-title-lg {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 56px;
+
+    @include media($media-lg) {
+        font-size: 32px;
+    }
+}
+
+.t-title-xl {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 65px;
+
+    @include media($media-lg) {
+        font-size: 44px;
+    }
+}
+
+.article {
+    .t-16 {
+        line-height: 35px;
+    }
+}
+
+a.t-secondary {
+    &:hover {
+        color: lighten($color: $color-secondary, $amount: 10%);
+    }
+}
+
+a.t-primary {
+    &:hover {
+        color: lighten($color: $color-primary, $amount: 10%);
+    }
+}
+
+.icon-sm {
+    font-size: .8rem;
+}
+
+.icon-lg {
+    font-size: 1.25rem;
+}
+
+.icon-xl {
+    font-size: 1.5rem;
+}
+
+.icon-2x {
+    font-size: 2rem;
+}
+
+.icon-3x {
+    font-size: 3rem;
+}
+
+.my-link-primary {
+    @extend %my-link;
+
+    border-bottom: 2px dashed $color-primary;
+    color: $color-primary;
+}
+
+.my-link-secondary {
+    @extend %my-link;
+
+    border-bottom: 2px dashed $color-secondary;
+    color: $color-secondary;
+}
+
+.my-link-success {
+    @extend %my-link;
+
+    border-bottom: 2px dashed $color-success;
+    color: $color-success;
+}
+
+.my-link-danger {
+    @extend %my-link;
+
+    border-bottom: 2px dashed $color-danger;
+    color: $color-danger;
+}

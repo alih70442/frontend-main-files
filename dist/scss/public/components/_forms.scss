@@ -1,0 +1,251 @@
+.c-textInput {
+    $parent: #{&};
+
+    position: relative;
+
+    @at-root #{$parent}__input {
+        $input: '.c-textInput__input';
+
+        height: 43px;
+        display: block;
+
+        background-color: transparent;
+        font-size: 13px;
+        line-height: 1.6;
+        padding: 9px;
+        width: 100%;
+        font-weight: 400;
+        border-radius: 4px;
+        border: 1px solid #e0e0e0;
+        outline: 0;
+
+        transition: .2s ease all;
+
+        &:focus {
+            border-width: 2px;
+            border-color: #039be5;
+            outline: 0;
+        }
+
+        &:focus~label {
+            top: -9px;
+            font-size: 12px;
+            color: $color-secondary;
+            background-color: #fff;
+        }
+
+        &:focus~.c-textInput__animator {
+            animation: c-textInput-animator .3s ease;
+        }
+
+        &--active {
+            &~label {
+                top: -9px;
+                font-size: 12px;
+                color: $color-secondary;
+                background-color: #fff;
+            }
+        }
+
+        // error handling +++
+        &--hasError,
+        &--hasError:focus {
+            border-color: #ff5252;
+        }
+
+        &--hasError:focus~label {
+            color: #ff5252;
+        }
+
+        // when has error and it is active too
+        &--hasError#{&}--active {
+            &~label {
+                color: #ff5252;
+            }
+        }
+
+        // noError handling +++
+        &--has-noError,
+        &--has-noError:focus {
+            border-color: $color-success;
+        }
+
+        &--has-noError:focus~label {
+            color: $color-success;
+        }
+
+        // when has error and it is active too
+        &--has-noError#{&}--active {
+            &~label {
+                color: $color-success;
+            }
+        }
+
+        // help text
+        #{$parent}__text {
+            color: $font-dark-passive;
+        }
+
+        // set help text color
+        &--hasError~#{$parent}__text {
+            color: #ff5252;
+        }
+
+        &--has-noError~#{$parent}__text {
+            color: $color-success;
+        }
+    }
+
+    @at-root #{$parent}__label {
+        color: #acacac;
+        font-size: 13px;
+        font-weight: 400;
+        position: absolute;
+        pointer-events: none;
+        right: 10px;
+        top: 12px;
+        left: inherit;
+        -webkit-transition: .2s ease all;
+        transition: .2s ease all;
+        width: auto;
+        max-width: 78%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: inline-block;
+        padding: 0 4px;
+        white-space: nowrap;
+    }
+
+    @at-root #{$parent}__animator {
+        background-color: $color-secondary;
+        position: absolute;
+        height: 25px;
+        top: 10px;
+        right: 0;
+        border-radius: 4px;
+        pointer-events: none;
+
+        animation-fill-mode: forwards;
+    }
+
+    @at-root #{$parent}__text {
+        color: $font-dark-passive;
+        font-size: 12px;
+        margin-top: 8px;
+        font-weight: 500;
+    }
+
+    @at-root #{$parent}__icon {
+        top: 50%;
+        left: 12px;
+
+        transform: translateY(-50%);
+    }
+
+    @keyframes c-textInput-animator {
+        0% {
+            width: 100px;
+            opacity: .5;
+        }
+
+        100% {
+            width: 30px;
+            opacity: 0;
+        }
+    }
+}
+
+// .c-radio {
+//     position: relative;
+//     user-select: none;
+
+//     &__radio {
+
+//         &:checked {
+//             &~label {
+//                 &::after {
+//                     transform: scale(1);
+//                 }
+//             }
+//         }
+//     }
+
+//     &__label {
+//         cursor: pointer;
+
+//         &::before {
+//             content: "";
+
+//             width: 20px;
+//             height: 20px;
+
+//             display: inline-block;
+
+//             vertical-align: middle;
+//             border: 3px solid #bebebe;
+//             border-radius: 50%;
+
+//             margin-left: 6px;
+//         }
+
+//         &::after {
+//             content: "";
+
+//             position: absolute;
+//             top: 25%;
+//             right: 6px;
+
+//             width: 8px;
+//             height: 8px;
+
+//             vertical-align: middle;
+//             background-color: #1387c8;
+//             border-radius: 50%;
+//             transition: all .2s ease 0s;
+//             transform: scale(0);
+//         }
+//     }
+// }
+
+// .c-checkbox {
+//     position: relative;
+//     user-select: none;
+
+//     &__checkbox {
+
+//         &:checked {
+//             &~label {
+//                 &::before {
+//                     background-size: 92%;
+//                     background-color: #0b8ae1;
+//                     border-color: #0b8ae1;
+//                 }
+//             }
+//         }
+//     }
+
+//     &__label {
+//         cursor: pointer;
+
+//         &::before {
+//             content: "";
+
+//             display: inline-block;
+
+//             width: 15px;
+//             height: 15px;
+
+//             vertical-align: middle;
+//             border: 2px solid #b5b5b5;
+//             background-color: transparent;
+//             border-radius: 3px;
+//             transition: all .2s ease 0s;
+//             margin-left: 6px;
+
+//             background-image: url($path-images-core + 'check.svg');
+//             background-position: center;
+//             background-repeat: no-repeat;
+//             background-size: 0;
+//         }
+//     }
+// }

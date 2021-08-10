@@ -1,0 +1,55 @@
+html {
+    direction: rtl;
+}
+
+body {
+    font-family: 'Shabnam' !important;
+    color: $font-dark;
+
+    font-size: 1rem;
+    text-align: right;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+a {
+    color: $font-dark;
+    text-decoration: none;
+
+    // transition: .3s all;
+
+    &:hover {
+        // color: $color-secondary;
+        color: $font-dark;
+        text-decoration: none;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.25rem;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
+    margin: 0;
+}
