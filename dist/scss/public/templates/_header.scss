@@ -1,4 +1,4 @@
-.page-navbar {
+.t-header {
     $parent: #{&};
 
     @at-root #{$parent}__ {}

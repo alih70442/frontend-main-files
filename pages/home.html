@@ -6,10 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>خانه</title>
+
+    <!-- start stylesheets -->
+
+    <!-- start imports -->
+    <link rel="stylesheet" href="/dist/build/css/libs/bootstrap.min.css">
+    <!-- end imports -->
+
+    <!-- end stylesheets -->
 </head>
 
 <body>
-    
-    <script src="/dist/"></script>
+
+    <header class="t-header"></header>
+
+    <main></main>
+
+    <footer class="t-footer"></footer>
+
+    <!-- start scripts -->
+
+    <!-- start imports -->
+    <script src="/dist/build/js/jquery.min.js"></script>
+    <script src="/dist/build/js/bootstrap.bundle.min.js"></script>
+    <script src="/dist/build/js/public/public.js"></script>
+    <!-- end imports -->
+
+    <!-- start jQ componets load -->
+    <script>
+        $('.p-header').load('_header.html');
+        $('.p-foter').load('_footer.html');
+    </script>
+    <!-- end jQ componets load -->
+
+    <!-- end scripts -->
 </body>
+
 </html>

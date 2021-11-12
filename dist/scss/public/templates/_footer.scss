@@ -1,4 +1,4 @@
-.page-footer {
+.t-footer {
     $parent: #{&};
 
     @at-root #{$parent}__ {}
