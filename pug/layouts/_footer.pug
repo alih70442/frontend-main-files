@@ -1,0 +1,135 @@
+
+mixin t_footer(input = {})
+
+    -
+        opt = {class_parent: ''};
+        opt = Object.assign(opt, input);
+
+    footer.page-footer(class=opt.class_parent)
+        .container-md
+            section(class='page-footer__order d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-end mx-auto')
+                div
+                    h2(class='page-footer__order-title text-center text-md-right') سفارش ترجمه دارید؟
+                    p(class='page-footer__order-text text-center text-md-right')
+                        | همین حالا سفارش ترجمه خود را ایجاد کنید
+                button.button.my-btn.my-btn-secondary.mt-3.mt-md-0 سفارش ترجمه
+        .container-md.d-flex.flex-column
+            div(class='page-footer__brand text-center text-md-right')
+                a(href='#')
+                    .image
+                        img(src='/dist/images/Transis-logo-ft.png' width='148' height='40' alt='transis-logo')
+            div(class='page-footer__content')
+                ul(class='contact js-footer_content')
+                    li.title.js-title.t-primary.font-weight-bold
+                        i.icon.js-icon.icon-plus.ml-2
+                        | اطلاعات تماس
+                    li
+                        ul.items.js-list
+                            li.item.pl-md-5
+                                i.icon.icon-marker
+                                p.text
+                                    | تهران - خ شهید مطهری - خ کوه نور - کوچه دوم - پلاک 8 - طبقه پنجم - واحد
+                                    | A
+                            li.item
+                                i.icon.icon-phone-call
+                                span.d-flex.flex-column
+                                    a.text(href='tel:02188177045')
+                                        | 02188177045 ساعات اداری
+                                    a.text(href='tel:09021515585')
+                                        | 09021515585 ساعات اداری
+                            li.item
+                                i.icon.icon-comment
+                                span.d-flex
+                                    a(href='#' class='social_link d-flex align-items-center ml-2')
+                                        img.temp-icon.ml-1(src='/dist/images/telegram-2.svg' alt='SEO')
+                                        | تلگرام
+                                    a(href='#' class='social_link d-flex align-items-center whatsapp_link')
+                                        img.temp-icon.ml-1(src='/dist/images/whatsapp-2.svg' alt='SEO')
+                                        | واتساپ
+                ul(class='services js-footer_content')
+                    li.title.t-primary.js-title.font-weight-bold
+                        i.icon.js-icon.icon-plus.ml-2
+                        | اطلاعات تماس
+                    li
+                        ul.items.js-list
+                            li.link
+                                a(href='#') ترجمه تخصصی
+                            li.link
+                                a(href='#') ترجمه فوری
+                            li.link
+                                a(href='#') ترجمه کتاب
+                            li.link
+                                a(href='#') ترجمه فیلم
+                ul(class='about js-footer_content')
+                    li.title.t-primary.js-title.font-weight-bold
+                        i.icon.js-icon.icon-plus.ml-2
+                        | بیشتر بدانید
+                    li
+                        ul.items.js-list
+                            li.link
+                                a(href='#') قیمت ترجمه
+                            li.link
+                                a(href='#') راهنما
+                            li.link
+                                a(href='#') سوالات متداول
+                            li.link
+                                a(href='#') وبلاگ
+                ul(class='about js-footer_content')
+                    li.title.t-primary.js-title.font-weight-bold
+                        i.icon.js-icon.icon-plus.ml-2
+                        | درباره ترنسیس
+                    li
+                        ul.items.js-list
+                            li.link
+                                a(href='#') درباره ما
+                            li.link
+                                a(href='#') تماس با ما
+                            li.link
+                                a(href='#') اخبار ترنسیس
+            div(class='page-footer__certification row')
+                .col-12.col-md-9.col-lg-10.d-flex.flex-column.mb-4.mb-md-0
+                    .js-sliding(data-closeTextBtn='بستن' data-openTextBtn='متن کامل' data-closeHeight='100px' data-animationDuration='400' data-isOpen='false' data-btnClasses='collape_btn t-14')
+                        p.text.text-center.text-md-right
+                            | سایت ترجمه تخصصی ترنسیس اولین سرویس و سایت ترجمه تخصصی آنلاین به صورت مناقصه ای در ایران
+                            | است. ترنسیس بستری است که از طریق آن سفارش دهندگان ترجمه بدون واسطه با مترجمان ارتباط
+                            | برقرار
+                            | می کنند. در ترنسیس، ترجمه تخصصی انواع محتواها نظیر ترجمه متون تخصصی و مقالات علمی، ترجمه
+                            | تخصصی کتاب، ترجمه مقاله به صورت تخصصی، ترجمه تخصصی مقاله ISI، ترجمه مقاله خبری، ترجمه
+                            | زیرنویس فیلم و فایل صوتی و تصویری، ترجمه تخصصی قراردادها و ا سناد تجاری و وب سایت، ترجمه
+                            | متون تخصصی دانشگاهی و دانشجویی از زبان انگلیسی به فارسی، فارسی به انگلیسی و سایر زبانها
+                            | به
+                            | صورت تخصصی و با گارانتی کیفیت، ترجمه می شود. وجه تمایز سایت ترجمه ترنسیس با سایر سرویس
+                            | ها
+                            | “پیشتیبانی کامل و 24 ساعته”، “کیفیت بالا” و “قیمت پایین” است. در ترنسیس تا رضایت از
+                            | ترجمه
+                            | تخصصی محتوا جلب نشود کار به اتمام نخواهد رسید، سفارش دهندگان ترجمه می توانند تمامی کالاها و
+                            | خدمات حسب مورد دارای مجوز های لازم از مراجع مربوطه می باشند و فعالیتهای این سایت تابع قوانین و
+                            | مقررات جمهوری اسلامی ایران می باشد.
+                .col-12.col-md-3.col-lg-2
+                    .image.text-center
+                        img(src='/dist/images/namad.jpg' width='86' height='136' alt='SEO')
+            .line.mt-4
+            div(class='page-footer__copyright mt-4')
+                div(class='page-footer__copyright-con d-flex-between-center flex-wrap')
+                    .right.text-center
+                        span.d-none.d-lg-inline-block تمامی حقوق متعلق به ترنسیس است.
+                        | ©‏ 1396-1399
+                        div
+                            a.t-12.text-nowrap.mr-3(href='#')
+                                u قوانین و مقررات
+                            a.t-12.text-nowrap.mr-2(href='#')
+                                u حفظ حریم شخصی
+                    .left.text-left
+                        a(href='#' aria-label='footer-socials')
+                            i.icon.t-secondary.icon-telegram
+                        a(href='#' aria-label='footer-socials')
+                            i.icon.t-secondary.icon-instagram
+                        a(href='#' aria-label='footer-socials')
+                            i.icon.t-secondary.icon-twitter
+                        a(href='#' aria-label='footer-socials')
+                            i.icon.t-secondary.icon-linkedin
+                        a(href='#' aria-label='footer-socials')
+                            i.icon.t-secondary.icon-facebook
+    section.t-alerts.js-alerts
+
+

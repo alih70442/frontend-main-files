@@ -141,7 +141,7 @@ const output_dir = 'build/';
     gulp.task('js-build', gulp.series('js-pages', 'js-public', 'ts-build', 'js-other'));
 
     gulp.task('js:watch', function () {
-        gulp.watch([input_dir + 'js/templates/*.js', input_dir + 'js/public/classes/*.js'], gulp.series(['js-pages', 'js-public']));
+        gulp.watch([input_dir + 'js/templates/*.js', input_dir + 'js/classes/*.js'], gulp.series(['js-pages', 'js-public']));
         gulp.watch(input_dir + 'js/pages/*.js', gulp.series(['js-pages']));
         gulp.watch([input_dir + 'js/public/*.js'], gulp.series(['js-public']));
     });
@@ -195,13 +195,13 @@ const output_dir = 'build/';
 // watch the project
 gulp.task('watch', function () {
     // pug
-    gulp.watch('pug/**/*.pug', { delay: 1000 }, gulp.series(['pug-build']));
+    gulp.watch('pug/**/*.pug', /* { delay: 1000 },*/ gulp.series(['pug-build']));
 
     // scss
     gulp.watch(input_dir + 'scss/**/*.scss', gulp.series(['sass']));
 
     // js
-    gulp.watch([input_dir + 'js/templates/*.js', input_dir + 'js/public/classes/*.js'], gulp.series(['js-pages', 'js-public']));
+    gulp.watch([input_dir + 'js/templates/*.js', input_dir + 'js/classes/*.js'], gulp.series(['js-pages', 'js-public']));
     gulp.watch(input_dir + 'js/pages/*.js', gulp.series(['js-pages']));
     gulp.watch(input_dir + 'js/public/*.js', gulp.series(['js-public']));
 });

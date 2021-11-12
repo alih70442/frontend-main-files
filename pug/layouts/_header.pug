@@ -1,0 +1,192 @@
+mixin p_header_body()
+
+    div(class='page-navbar__con container-fluid px-3 px-lg-4')
+        div(class='sidebar__disabler js-sidebar__disabler')
+        .d-flex.align-items-center.position-relative
+            button(class='sidebar__toggler js-sidebar__toggler navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+                i.bar
+                i.bar
+                i.bar.last
+            div(class='page-navbar__sidebar sidebar js-sidebar collapse navbar-collapse')
+                .d-lg-none.w-100.text-center.py-3(style='background: #1E2D3B;')
+                    div(class='page-navbar__brand mx-auto')
+                        img(src='/dist/images/transis-logo-white.png' width='90' height='37' alt='لوگو ترنسیس | Transis LOGO')
+                div(class='page-navbar__login d-flex justify-content-center d-lg-none px-2')
+                    a.login.w-100(href='#') ورود
+                div(class='page-navbar__user-sidebar-logined page-navbar__dropdown page-navbar__dropdown--sidebar nav-item dropdown d-lg-none')
+                    a(href='#' class='page-navbar__link my-link dropdown-toggle w-100 d-flex-between-center' type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        span.d-flex.align-items-center.text-white.font-weight-bold
+                            div(class='page-navbar__user-logined ml-1')
+                                img(src='/dist/images/def_prsn_pic1.jpg' alt='تصویر پروفایل کاربری')
+                            | علی حسینی
+                        button.login.my-link.px-0(type='button')
+                            i(class='page-navbar__user-sidebar-logined-icon align-middle icon icon-log-out')
+                    .dropdown-menu.dropdown-menu-right
+                        a.dropdown-item(href='#') صفحه من
+                        a.dropdown-item(href='#') ویرایش اطلاعات
+                        a.dropdown-item(href='#') تغییر رمز عبور
+                        a.dropdown-item(href='#') خروج
+                div(class='page-navbar__brand d-none d-lg-block')
+                    img(src='/dist/images/transis-logo-white.png' width='90' height='37' class='image_white' alt='لوگو ترنسیس | Transis LOGO')
+                    img(src='/dist/images/transis-logo.png' width='90' height='37' class='image_colored' alt='لوگو ترنسیس | Transis LOGO')
+                .my-divider.w-100.my-2.d-lg-none(style='opacity: 0.15;')
+                ul(class='page-navbar__links navbar-nav ml-auto')
+                    li.nav-item.d-lg-none.my-1.px-2
+                        a.my-btn.my-btn-sm.my-btn-secondary.my-btn--noRounded.w-100(href='#')
+                            span.t-14 ایجاد سفارش ترجمه
+                    li.nav-item
+                        a(class='page-navbar__link nav-link' href='#')
+                            i.icon.icon-plus.d-inline-block.d-lg-none.ml-2
+                            | صفحه اصلی
+                    li(class='nav-item dropdown page-navbar__dropdown page-navbar__dropdown--sidebar')
+                        button(type='button' class='page-navbar__link my-link nav-link dropdown-toggle w-100 w-lg-auto text-right justify-content-between pl-3' data-toggle='dropdown')
+                            span.d-inline-block.align-items-center
+                                i.icon.icon-plus.d-inline-block.d-lg-none.ml-2
+                                | خدمات
+                        .dropdown-menu.dropdown-menu-right
+                            .dropdown-item.dropdown.dropleft.c-mega-menu.js-mega-menu
+                                button(type='button' class='my-link dropdown-toggle c-mega-menu__btn js-mega-menu__btn px-0 d-flex-between-center w-100' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' aria-labelledby='navbarDropdown')
+                                    | ترجمه متون تخصصی
+                                div(class='c-mega-menu__list js-mega-menu__list dropdown-menu dropdown-menu-right')
+                                    .row.mx-lg-0
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#') ترجمه تخصصی مدیریت
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#') ترجمه تخصصی عمران
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#') ترجمه تخصصی مکانیک
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#')
+                                            | ترجمه تخصصی مهندسی
+                                            | صنایع
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#') ترجمه تخصصی ریاضیات
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#') ترجمه تخصصی پزشکی
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#') ترجمه تخصصی کشاورزی
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#')
+                                            | ترجمه تخصصی کاتالوگ و
+                                            | بروشور
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#')
+                                            | ترجمه تخصصی مهندسی
+                                            | صنایع
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#') ترجمه تخصصی ریاضیات
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#') ترجمه تخصصی پزشکی
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#') ترجمه تخصصی کشاورزی
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#') ترجمه تخصصی مدیریت
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#')
+                                            | ترجمه تخصصی مهندسی
+                                            | صنایع
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#') ترجمه تخصصی ریاضیات
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#') ترجمه تخصصی پزشکی
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#') ترجمه تخصصی مکانیک
+                                        a(class='c-mega-menu__list-item dropdown-item text-right col-12 col-lg-4' href='#') ترجمه تخصصی عمران
+                            a.dropdown-item.text-right(href='#') ترجمه خبر و مقاله
+                            a.dropdown-item.text-right(href='#') ترجمه مقاله
+                            a.dropdown-item.text-right(href='#') ترجمه مدیا
+                            a.dropdown-item.text-right(href='#') ترجمه کتاب
+                            a.dropdown-item.text-right(href='#') ترجمه وب سایت
+                            a.dropdown-item.text-right(href='#') ترجمه اسناد تجاری
+                    li.nav-item
+                        a(class='page-navbar__link nav-link' href='#')
+                            i.icon.icon-plus.d-inline-block.d-lg-none.ml-2
+                            | قیمت ترجمه
+                    li(class='nav-item dropdown page-navbar__dropdown page-navbar__dropdown--sidebar')
+                        button(type='button' class='page-navbar__link my-link nav-link dropdown-toggle w-100 w-lg-auto text-right justify-content-between pl-3' data-toggle='dropdown')
+                            span.d-inline-block.align-items-center
+                                i.icon.icon-plus.d-inline-block.d-lg-none.ml-2
+                                | راهنما
+                        .dropdown-menu.dropdown-menu-right
+                            a.dropdown-item.text-right(href='#') نحوه ایجاد سفارش ترجمه
+                            a.dropdown-item.text-right(href='#') نحوه فعالیت به عنوان مترجم
+                            a.dropdown-item.text-right(href='#') سؤالات متداول
+                            a.dropdown-item.text-right(href='#') مرکز راهنما
+                    li(class='nav-item dropdown page-navbar__dropdown page-navbar__dropdown--sidebar')
+                        button(type='button' class='page-navbar__link my-link nav-link dropdown-toggle w-100 w-lg-auto text-right justify-content-between pl-3' data-toggle='dropdown')
+                            span.d-inline-block.align-items-center
+                                i.icon.icon-plus.d-inline-block.d-lg-none.ml-2
+                                | درباره ترنسیس
+                        .dropdown-menu.dropdown-menu-right
+                            a.dropdown-item.text-right(href='#') آشنایی با تیم ترنسیس
+                            a.dropdown-item.text-right(href='#') ارتباط با ما
+                            a.dropdown-item.text-right(href='#') استخدام مترجم
+                    li.nav-item
+                        a(class='page-navbar__link nav-link' href='#')
+                            i.icon.icon-plus.d-inline-block.d-lg-none
+                            | وبلاگ
+
+                    //-li(class='nav-item dropdown page-navbar__dropdown d-none d-lg-block')
+                        a(href='#' class='my-link page-navbar__link dropdown-toggle pl-3' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                            span ورود/ثبت نام
+                        .dropdown-menu.dropdown-menu-right.dropdown-menu-sm
+                            a.login.dropdown-item.text-right.text-md-center(href='#') ورود
+                            a.register.dropdown-item.text-right.text-md-center(href='#') ثبت نام
+
+
+
+
+        div(class='page-navbar__brand page-navbar__brand--phone d-lg-none pos-centering-absolute')
+            img(src='/dist/images/transis-logo-white.png' width='90' height='37' class='image_white' alt='لوگو ترنسیس | Transis LOGO')
+            img(src='/dist/images/transis-logo.png' width='90' height='37' class='image_colored' alt='لوگو ترنسیس | Transis LOGO')
+        .d-flex.align-items-center
+            .d-none.d-lg-block.ml-2
+                a.t-success.d-flex.align-items-center(href='tel:+982188177045')
+                    i.t-18.icon.icon-phone.align-middle.my-bg-light.rounded-circle.ml-2.pos-centering(style='width: 40px; height: 40px;')
+                    | 88177045 - 021
+            div(class='page-navbar__dropdown page-navbar__dropdown--left dropdown--noArrow dropdown d-lg-none')
+                button.my-link.dropdown-toggle.pl-0.my-bg-light.rounded-circle(style='width: 40px; height: 40px;' type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    i.t-success.t-18.icon.icon-phone.align-middle.ml-2
+                .dropdown-menu.dropdown-menu-sm
+                    a.dropdown-item.text-center(href='tel:+982188177045')
+                        | 88177045
+                        | -
+                        | 021
+            .d-flex.align-items-center
+                div(class='page-navbar__user-logined page-navbar__dropdown page-navbar__dropdown--left dropdown d-none d-lg-block')
+                    button.my-link.dropdown-toggle.pl-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        img(src='/dist/images/def_prsn_pic1.jpg' alt='تصویر پروفایل کاربری')
+                    .dropdown-menu.dropdown-menu-sm
+                        a.dropdown-item.text-center(href='#') پنل کاربری
+                        a.dropdown-item.text-center(href='#') خروج
+
+                button.my-link.pl-2(type='button')
+                    i.page-navbar__notifIcon.page-navbar__notifIcon--hasNew.icon.icon-bell.position-relative.d-inline-block.t-dark-passive.align-middle.t-18
+                //- div(class='dropdown dropdown--noArrow page-navbar__dropdown page-navbar__dropdown--left mr-2')
+                    button.my-link.dropdown-toggle.pl-2(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                        i.icon.icon-bell.t-dark-passive.align-middle.t-18
+                    .dropdown-menu.dropdown-menu-sm
+                        a.dropdown-item.text-center(href='#') اخبار
+
+            // user not logined
+            //
+                <div class="d-flex align-items-center">
+
+                <button type="button" class="my-link t-18 t-dark-passive d-lg-none" aria-label="ورود به سایت">
+                <i class="icon icon-user align-middle"></i>
+                </button>
+
+                <div class="d-none d-lg-block">
+
+                <button type="button" class="my-btn my-btn-light-passive" aria-label="ورود به سایت">
+                <i class="icon icon-user align-middle ml-1"></i>
+                ورود
+                </button>
+                </div>
+                </div>
+            // user not logined
+
+
+            button(type='button' class='page-navbar__order my-btn my-btn-light d-none d-lg-block mr-2' aria-label='ثبت سفارش ترجمه')
+                | سفارش ترجمه
+        div(class='page-navbar__floatOrder js-navbar__floatOrder')
+            a.my-btn.my-btn-secondary.d-lg-none(href='#')
+                | ثبت سفارش
+
+
+mixin t_header(input = {})
+
+    -
+        opt = {class_parent: '', has_parent: true};
+        opt = Object.assign(opt, input);
+
+    if opt.has_parent
+        nav.page-navbar.js-page-navbar.navbar.navbar-expand-lg.page-navbar-light.js-page-navbar-light(class= opt.class_parent)
+
+            +p_header_body()
+    else
+
+        +p_header_body()

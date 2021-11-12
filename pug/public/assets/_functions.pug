@@ -1,0 +1,31 @@
+-
+    Number.prototype.courency = function(num, format = 3) {
+        var re = '\\d(?=(\\d{' + (format || 3) + '})+' + (num > 0 ? '\\.' : '$') + ')';
+        return this.toFixed(Math.max(0, ~~num)).replace(new RegExp(re, 'g'), '$&,');
+    };
+
+-
+    function random_num(from, to) {
+
+        return Math.floor((Math.random() * (to - from + 1)) + from)
+    }
+
+-
+    function get_bool() {
+        return Math.random() < 0.5;
+    }
+
+-
+    function get_id(has_inc = true) {
+        if (has_inc) 
+            return ('id_' + p_id++)
+        else
+            return ('id_' + p_id)
+    }
+
+-
+    function get_lorem(times = 1) {
+        const ratio = 10;
+
+        return p_lorem.substring(0, times * ratio);
+    }
